@@ -11,94 +11,94 @@
 </head>
 
 <body class="bg-teal-400">
-  <div class="bg-gradient-to-tr  w-full py-10 flex flex-col justify-center gap-4">
-    <h2 class="text-center font-bold text-3xl">Registrate</h2>
+  <div class="flex flex-col justify-center w-full gap-4 py-10 bg-gradient-to-tr">
+    <h2 class="text-3xl font-bold text-center">Registrate</h2>
     <form id="formulario"
-      class="container mx-auto max-w-screen-lg w-11/12 bg-gray-200 py-8 px-2 rounded-sm flex flex-col gap-2 md:flex-row flex-wrap justify-around ">
+      class="container flex flex-col flex-wrap justify-around w-11/12 max-w-screen-lg gap-2 px-2 py-8 mx-auto bg-gray-200 rounded-sm md:flex-row ">
 
       <!-- Grupo usuario -->
-      <div id="grupo-usuario" class="  w-full md:w-2/5">
-        <label for="usuario" class="block font-bold p-2 cursor-pointer">Usuario</label>
-        <div class="grupo-input flex gap-1 items-center">
+      <div id="grupo-usuario" class="w-full md:w-2/5">
+        <label for="usuario" class="block p-2 font-bold cursor-pointer">Usuario</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="text"
-            class="input w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="usuario" id="usuario">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">El usuario tiene que ser de 4 a 16 dígitos y solo
+        <p class="hidden text-sm font-medium text-red-600 input-error">El usuario tiene que ser de 4 a 16 dígitos y solo
           puede contener
           numeros, letras y
           guion
           bajo.</p>
       </div>
       <!-- Grupo nombre  -->
-      <div id="grupo-nombre" class="  w-full md:w-2/5">
-        <label for="nombre" class="block font-bold p-2 cursor-pointer">Nombre</label>
-        <div class="grupo-input  flex gap-1 items-center">
+      <div id="grupo-nombre" class="w-full md:w-2/5">
+        <label for="nombre" class="block p-2 font-bold cursor-pointer">Nombre</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="text"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="nombre" id="nombre">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">El nombre solo puede contener letras y espacios,
+        <p class="hidden text-sm font-medium text-red-600 input-error">El nombre solo puede contener letras y espacios,
           pueden llevar acentos.</p>
       </div>
       <!-- Grupo password  -->
-      <div id="grupo-password" class="  w-full md:w-2/5">
-        <label for="password" class="block font-bold p-2 cursor-pointer">Contraseña</label>
-        <div class="grupo-input  flex gap-1 items-center">
+      <div id="grupo-password" class="w-full md:w-2/5">
+        <label for="password" class="block p-2 font-bold cursor-pointer">Contraseña</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="password"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="password" id="password">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">La contraseña tiene que ser de 4 a 12 dígitos.
+        <p class="hidden text-sm font-medium text-red-600 input-error">La contraseña tiene que ser de 4 a 12 dígitos.
         </p>
       </div>
       <!-- Repetir password  -->
-      <div id="grupo-password2" class="  w-full md:w-2/5">
-        <label for="password2" class="block font-bold p-2 cursor-pointer">Repetir Contraseña</label>
-        <div class="grupo-input  flex gap-1 items-center">
+      <div id="grupo-password2" class="w-full md:w-2/5">
+        <label for="password2" class="block p-2 font-bold cursor-pointer">Repetir Contraseña</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="password"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="password2" id="password2">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">Ambas contraseñas deben ser iguales.</p>
+        <p class="hidden text-sm font-medium text-red-600 input-error">Ambas contraseñas deben ser iguales.</p>
       </div>
       <!-- Correo  -->
-      <div id="grupo-correo" class="  w-full md:w-2/5">
-        <label for="correo" class="block font-bold p-2 cursor-pointer">Correo Electrónico</label>
-        <div class="grupo-input  flex gap-1 items-center">
+      <div id="grupo-correo" class="w-full md:w-2/5">
+        <label for="correo" class="block p-2 font-bold cursor-pointer">Correo Electrónico</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="email"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="correo" id="correo">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">Ingresa un correo válido.</p>
+        <p class="hidden text-sm font-medium text-red-600 input-error">Ingresa un correo válido.</p>
       </div>
       <!-- Telefono -->
-      <div id="grupo-telefono" class="  w-full md:w-2/5">
-        <label for="telefono" class="block font-bold p-2 cursor-pointer">Telefono</label>
-        <div class="grupo-input  flex gap-1 items-center">
+      <div id="grupo-telefono" class="w-full md:w-2/5">
+        <label for="telefono" class="block p-2 font-bold cursor-pointer">Telefono</label>
+        <div class="flex items-center gap-1 grupo-input">
           <input type="tel"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
+            class="w-full pl-3 pr-10 leading-10 border-2 border-transparent border-solid rounded-sm input h-11 focus:outline-none "
             name="telefono" id="telefono">
-          <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
+          <i class="text-red-600 opacity-0 validacion fas fa-times-circle"></i>
         </div>
-        <p class="input-error hidden font-medium text-sm text-red-600">El telefono solo puede contener numeros y el
+        <p class="hidden text-sm font-medium text-red-600 input-error">El telefono solo puede contener numeros y el
           maximo son 14 dígitos.</p>
       </div>
 
       <!-- Grupo: Terminos y Condiciones -->
-      <div id="grupo-terminos" class="  w-full md:w-2/5">
-        <label class=" font-bold p-2 cursor-pointer text-xs flex justify-center gap-1">
+      <div id="grupo-terminos" class="w-full md:w-2/5">
+        <label class="flex justify-center gap-1 p-2 text-xs font-bold cursor-pointer ">
           <input class="" type="checkbox" name="terminos" id="terminos">
           Acepto los Terminos y Condiciones
         </label>
       </div>
-      <div class="hidden w-full bg-red-400 py-1 px-2" id="mensaje-error">
-        <p class="flex gap-1 items-center justify-center"><i class=" fas fa-exclamation-triangle"></i>
+      <div class="hidden w-full px-2 py-1 bg-red-400" id="mensaje-error">
+        <p class="flex items-center justify-center gap-1"><i class=" fas fa-exclamation-triangle"></i>
           <b>Error:</b> Por
           favor rellena
           el formulario
@@ -106,9 +106,9 @@
         </p>
       </div>
 
-      <div class="flex w-full flex-col  py-1 items-center gap-3" id="mensaje-error">
-        <button id="submit" type="submit" class="bg-black text-white py-2 px-6 rounded-sm">Enviar</button>
-        <p class="bg-green-400 py-1 p-6 text-center font-bold hidden" id="mensaje-exito">Formulario enviado
+      <div class="flex flex-col items-center w-full gap-3 py-1">
+        <button id="submit" type="submit" class="px-6 py-2 text-white bg-black rounded-sm ">Enviar</button>
+        <p class="hidden p-6 py-1 font-bold text-center bg-green-400" id="mensaje-exito">Formulario enviado
           exitosamente!</p>
       </div>
 
