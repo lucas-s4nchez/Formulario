@@ -10,8 +10,8 @@
   <script src="https://kit.fontawesome.com/96e4c6db82.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="bg-gradient-to-tr bg-teal-400 w-full py-10 flex flex-col justify-center gap-4">
+<body class="bg-teal-400">
+  <div class="bg-gradient-to-tr  w-full py-10 flex flex-col justify-center gap-4">
     <h2 class="text-center font-bold text-3xl">Registrate</h2>
     <form id="formulario"
       class="container mx-auto max-w-screen-lg w-11/12 bg-gray-200 py-8 px-2 rounded-sm flex flex-col gap-2 md:flex-row flex-wrap justify-around ">
@@ -21,11 +21,13 @@
         <label for="usuario" class="block font-bold p-2 cursor-pointer">Usuario</label>
         <div class="grupo-input flex gap-1 items-center">
           <input type="text"
-            class="input w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="usuario" id="usuario">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y
+        <p class="input-error hidden font-medium text-sm text-red-600">El usuario tiene que ser de 4 a 16 dígitos y solo
+          puede contener
+          numeros, letras y
           guion
           bajo.</p>
       </div>
@@ -34,57 +36,58 @@
         <label for="nombre" class="block font-bold p-2 cursor-pointer">Nombre</label>
         <div class="grupo-input  flex gap-1 items-center">
           <input type="text"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="nombre" id="nombre">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">>El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras
-          y guion
-          bajo.</p>
+        <p class="input-error hidden font-medium text-sm text-red-600">El nombre solo puede contener letras y espacios,
+          pueden llevar acentos.</p>
       </div>
       <!-- Grupo password  -->
       <div id="grupo-password" class="  w-full md:w-2/5">
         <label for="password" class="block font-bold p-2 cursor-pointer">Contraseña</label>
         <div class="grupo-input  flex gap-1 items-center">
           <input type="password"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="password" id="password">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        <p class="input-error hidden font-medium text-sm text-red-600">La contraseña tiene que ser de 4 a 12 dígitos.
+        </p>
       </div>
       <!-- Repetir password  -->
       <div id="grupo-password2" class="  w-full md:w-2/5">
         <label for="password2" class="block font-bold p-2 cursor-pointer">Repetir Contraseña</label>
         <div class="grupo-input  flex gap-1 items-center">
           <input type="password"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="password2" id="password2">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">Ambas contraseñas deben ser iguales.</p>
+        <p class="input-error hidden font-medium text-sm text-red-600">Ambas contraseñas deben ser iguales.</p>
       </div>
       <!-- Correo  -->
       <div id="grupo-correo" class="  w-full md:w-2/5">
         <label for="correo" class="block font-bold p-2 cursor-pointer">Correo Electrónico</label>
         <div class="grupo-input  flex gap-1 items-center">
           <input type="email"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="correo" id="correo">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">Ambas contraseñas deben ser iguales.</p>
+        <p class="input-error hidden font-medium text-sm text-red-600">Ingresa un correo válido.</p>
       </div>
       <!-- Telefono -->
       <div id="grupo-telefono" class="  w-full md:w-2/5">
         <label for="telefono" class="block font-bold p-2 cursor-pointer">Telefono</label>
         <div class="grupo-input  flex gap-1 items-center">
           <input type="tel"
-            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10  focus:border-blue-500 focus:outline-none "
+            class="input  w-full border-2 border-solid border-transparent rounded-sm h-11 leading-10 pl-3 pr-10   focus:outline-none "
             name="telefono" id="telefono">
           <i class="validacion fas fa-times-circle text-red-600 opacity-0"></i>
         </div>
-        <p class="input-error hidden">Ambas contraseñas deben ser iguales.</p>
+        <p class="input-error hidden font-medium text-sm text-red-600">El telefono solo puede contener numeros y el
+          maximo son 14 dígitos.</p>
       </div>
 
       <!-- Grupo: Terminos y Condiciones -->
@@ -115,6 +118,7 @@
 
   </div>
 
+  <script src="app.js"></script>
 </body>
 
 </html>
